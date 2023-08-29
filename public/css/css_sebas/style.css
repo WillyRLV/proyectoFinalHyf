@@ -106,23 +106,26 @@ h2{
 }
 /*PC*/
 @media (min-width: 1024px){
+    /*Pegar el contenido a los lados*/
     .mision_About *{
         margin-right: auto;
     }
-
     .vision_About *{
         margin-left: auto;
     }
+    /*Separación entre las cartas de perfiles*/
     .perfiles_About{
         gap: 80px;
     }
 
+    /*Para que el contenido este en fila y no en columna*/
     .mision_About, .vision_About{
         margin-top: 15px;
-        flex-direction: row;
-        
+        flex-direction: row;     
     }
 
+    /*Contenido de Mision y vision para el cambio de color 
+    y posicionamiento*/
     .contenidoMV{
         padding: 40px 20px;
         background-color: #5F91A8;
@@ -130,6 +133,8 @@ h2{
         position: relative;
     }
 
+    /*Modificación de las imagenes para que este al costado
+    del div "contenidoMV" y estilo de sombreado y borde*/
     .imagenMision{
         position: absolute;
         top: 5px;
@@ -150,10 +155,8 @@ h2{
        
     }
 
+    /*Cambio de color en el texto del div "contenidoMV"*/
     #misionVision_About .text_About{
         color: white;
     }
-
-
-
 }
