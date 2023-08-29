@@ -1,41 +1,47 @@
+/*Fuente*/
 body{
     font-family: 'Lato', sans-serif;
 }
-
+/*Estilo general para el centrado de items*/
 #about{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 0px 35px;
+    gap: 45px;
+    margin: 20px 10%;
+    text-align: center;
 }
-
-#subDes_About{
+/*Contenido*/
+#subDes_About, .mision_About, 
+.vision_About, .perfiles_About,
+#equipo{
     display:flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+/*Subtitulo "Nosotros" estilo*/
 .subTitulo_About{
     text-transform: uppercase;
     color: #606060;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
     text-decoration: underline;
     text-decoration-color: #A8A0A0;
-    text-underline-offset: 10px;
+    text-underline-offset: 20px;
+}
+/*Texto general*/
+.text_About{
+    color: #959595;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.descripcion_About{
-    margin-bottom: 29px;
-}
-
-#about p {
-    color: #959595
-}
-
+/*Estilo de los títulos vision, mision y equipo*/
 h2{
     margin: 0;
 }
-
 .sub_About{
     color: #FEFEFE;
     background: #5F91A8;
@@ -43,6 +49,40 @@ h2{
     line-height: normal;
     text-align: center;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
+.tituloMision{
+    margin-right: auto;
+}
+.tituloVision{
+    margin-left: auto;
+}
+
+/*Margen imagenes*/
+#misionVision_About img{
+    margin-bottom: 30px;
+}
+/*Estilo de las cartas pefil*/
+.perfil{
+    border-radius: 18px;
+    padding: 15px 22px 40px 22px;
+    margin-top: 35px;
+    background-color: #D9D9D9;
+}
+.nombrePerfil{
+    color: #5F91A8;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.cargoPerfil{
+    color: #708357;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+}
+
 
