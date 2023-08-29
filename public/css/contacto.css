@@ -7,7 +7,7 @@ body {
 
 
 .container {
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     background-color: #F0F0F0; /* Cambio de color de fondo */
@@ -37,12 +37,12 @@ body {
 
 
 .contact-form {
-    border: none; /* Elimina el borde */
-    border-bottom: 2px solid #007bff; /* Agrega la línea celeste en la parte inferior */
+    border: none; 
+    border-bottom: 2px solid #007bff;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: #F0F0F0; /* Cambio de color de fondo */
+    background-color: #F0F0F0; 
 }
 label {
     display: block;
@@ -71,10 +71,10 @@ textarea {
     outline: none;
 
 }
-.center-button {
+.boton{
     text-align: center;
 }
-.centered-button {
+.boton-centro {
     display: block;
     margin: 0 auto;
     background-color: #007bff;
@@ -82,10 +82,9 @@ textarea {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    cursor: pointer;
 }
 
-.footer {
+.pie-pagina{
     text-align: center;
     margin-top: 20px;
     padding-top: 20px;
@@ -93,10 +92,10 @@ textarea {
     font-size: 12px;
     color: #606060;
 }
-.social-icons {
+.iconos {
     margin-top: 10px;
 }
-.social-icons img {
+.iconos img {
     width: 30px;
     height: 30px;
     margin: 0 10px;
@@ -105,11 +104,27 @@ textarea {
     margin-top: 10px;
     color: #606060;
 }
-@media screen and (max-width: 767px) {
-  
+@media screen and (max-width:767px) {
+    body {
+        background-color:  #F0F0F0;
+    }
+
+}
+
+/* tablet */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        background-color: #F0F0F0  ;
+    }
+
+}
+
+/* pc */
+
+@media screen and (min-width:1024px) {
     body {
         background-color: #F0F0F0;
     }
-    
-    
+
 }
