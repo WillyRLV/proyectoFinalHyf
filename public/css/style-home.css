@@ -1,0 +1,202 @@
+/*Importamos la fuente correspondiente*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/*Quitamos los espacios extra de los elementos y aplicamos fuente*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body{
+    background-color: #F2F2F2;
+}
+
+/*Damos posición, dimensiones y estilos al navbar*/
+.nav{
+    position: fixed;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: #3F7D9A;
+    box-shadow: 0 -19px 44px rgba(0,0,0,0.25);
+    z-index: 100;
+}
+
+.nav a:visited{
+    color: #3F7D9A;
+}
+
+/*Damos tamaño al Logo*/
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+/*Centramos los enlaces que están en la lista*/
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/*Escondemos el check*/
+#check-nav{
+    display: none;
+}
+
+/*Escondemos el contenedor del check y el ícono (label)*/
+div.check{
+    display: none;
+}
+
+/*Escondemos los íconos de redes sociales*/
+#redes-sociales{
+    display: none;
+}
+
+/*Centramos la imagen de Home*/
+.contenedor-img{
+    text-align: center;
+}
+
+/*Damos tamaño a la imagen*/
+.contenedor-img img{
+    width: 50%;
+    margin-top: 130px;
+    max-width: 300px;
+}
+
+/*Damos pisición y dimeniones al contenedor titulo*/
+.contenedor-titulo{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    max-width: 250px;
+    border-bottom: 0.1px solid rgba(96, 96, 96, 1);
+}
+
+/*Damos estilos al titulo (h1)*/
+.contenedor-titulo h1{
+    font-size: 40px;
+    color: rgba(96, 96, 96, 1);
+    line-height: 38.4px;
+    font-weight: 900;
+    padding: 20px;
+}
+
+/*Damos estilos al contenedor del texto que se encuentra bajo el título*/
+.contenedor-texto{
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+    height: auto;
+    color: rgba(96, 96, 96, 1);
+}
+
+/*Modificamos el posicionamiento de los botones bajo el texto*/
+.contenedor-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 20vh;
+    margin-bottom: 30px;
+}
+
+/*Dimensiones de botones*/
+.contenedor-botones button{
+    width: 134px;
+    height: 40px;
+}
+
+/*Estilos por id*/
+.contenedor-botones #btn-contacto{
+    border: 3px solid rgba(95, 145, 168, 1);
+    background-color: transparent;
+    color: rgba(95, 145, 168, 1);
+}
+
+/*Estilos por id*/
+.contenedor-botones #btn-mas{
+    border: 3px solid rgba(95, 145, 168, 1);
+    background-color: rgba(95, 145, 168, 1);
+    color: white;
+}
+
+
+.contenedor-botones #btn-contacto:hover{
+    transition: all .3s;
+    transform: scale(1.05);
+}
+
+.contenedor-botones #btn-mas:hover{
+    transition: all .3s;
+    transform: scale(1.05);
+}
+
+/*Responsive Celular*/
+@media screen and (max-width: 767px) {
+    .nav{
+        justify-content: space-between;
+    }   
+
+    .logo{
+        margin-left: 25px;
+    }
+
+    .nav .enlaces{
+        position: fixed;
+        top: 80px; /*322 relative*/
+        display: block;
+        text-align: center;
+        width: 70%;
+        padding: 20px;
+        left: 100%;
+        transition: all .5s;
+        z-index: 100;
+        height: calc(100vh - 80px);
+        background-color: #F2F2F2;
+    }
+
+    .enlaces a{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26.4px;
+        color: black !important;
+    }
+
+    .enlaces li{
+        display: block;
+        margin: 50px;
+    }
+
+    div.check{
+        display: block;
+        margin-right: 25px;
+        font-size: 25px;
+    }
+
+    #redes-sociales{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #redes-sociales a{
+        font-size: 30px;
+    }
+}
+

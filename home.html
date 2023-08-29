@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style-home.css">
+    <link rel="icon" href="https://hyfconsult.com/components/img/logo2.png" type="img/png">
     <title>Home</title>
 </head>
 <body>
     
+    <!--NavBar-->
+    <nav class="nav">
+        <a href="#" class="logo">H&F</a>
+        <ul class="enlaces" id="lista-enlaces">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li id="redes-sociales">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+        <div class="check">
+            <input type="checkbox" id="check-nav">
+            <label for="check-nav" class="icono-check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </nav>
     
+    <!--Home-->
+    <div class="contenedor-img">
+        <img src="public/img/undraw_projections_re_ulc6.svg" alt="">
+        <div class="contenedor-titulo">
+            <h1>HOME</h1>
+        </div>
+    </div>
+    <div class="contenedor-texto">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.
+        </p>
+    </div>
+    <div class="contenedor-botones">
+        <button type="button" id="btn-contacto">Contacto</button>
+        <button type="button" id="btn-mas">Más</button>
+    </div>
 
+    <!--CONTENIDO-->
 
+    <script src="https://kit.fontawesome.com/a7fc31cc6a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="public/js/script-home.js"></script>
 </body>
 </html>
