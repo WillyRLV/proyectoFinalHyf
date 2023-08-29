@@ -24,7 +24,15 @@ body {
     color: #606060;
     position: relative;
 }
-
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%; 
+    border-bottom: 2px solid #606060; 
+}
 
 .image-container {
     text-align: center;
@@ -104,9 +112,11 @@ textarea {
 @media screen and (max-width: 767px) {
   
     body {
-        background-color: #f4f4f4;
+        background-color: #F0F0F0;
     }
-    
+    .title::before {
+        width: 44%; /* Ajusta el ancho para dispositivos móviles */
+    }
     
 }
 
