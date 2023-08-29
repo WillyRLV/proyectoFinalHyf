@@ -244,3 +244,27 @@ div.check{
     }
 }
 
+/*NO ES MI CÓDIGO - Animación de enlaces de navbar*/
+  nav a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+  }
+  
+  .list-item a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #BFAF00;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
