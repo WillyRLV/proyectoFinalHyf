@@ -1,0 +1,48 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px 35px;
+}
+
+#subDes_About{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitulo_About{
+    text-transform: uppercase;
+    color: #606060;
+    text-decoration: underline;
+    text-decoration-color: #A8A0A0;
+    text-underline-offset: 10px;
+}
+
+.descripcion_About{
+    margin-bottom: 29px;
+}
+
+#about p {
+    color: #959595
+}
+
+h2{
+    margin: 0;
+}
+
+.sub_About{
+    color: #FEFEFE;
+    background: #5F91A8;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
