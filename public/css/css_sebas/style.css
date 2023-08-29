@@ -116,4 +116,44 @@ h2{
     .perfiles_About{
         gap: 80px;
     }
+
+    .mision_About, .vision_About{
+        margin-top: 15px;
+        flex-direction: row;
+        
+    }
+
+    .contenidoMV{
+        padding: 40px 20px;
+        background-color: #5F91A8;
+        width: 430px;
+        position: relative;
+    }
+
+    .imagenMision{
+        position: absolute;
+        top: 5px;
+        right: -170px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagenVision{
+        position: absolute;
+        top: 20px;
+        left: -170px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagenMision, .imagenVision{
+       border-radius: 10px;
+       background-color: white;
+       
+    }
+
+    #misionVision_About .text_About{
+        color: white;
+    }
+
+
+
 }
