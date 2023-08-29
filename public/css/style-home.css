@@ -16,6 +16,10 @@ body{
     background-color: #F2F2F2;
 }
 
+.contenedor-home{
+    position: relative;
+}
+
 /*Damos posición, dimensiones y estilos al navbar*/
 .nav{
     position: fixed;
@@ -144,6 +148,46 @@ div.check{
 .contenedor-botones #btn-mas:hover{
     transition: all .3s;
     transform: scale(1.05);
+}
+
+/*Dimensiones para el contenedor del titulo (apartado de siguenos)*/
+.siguenos-titulo{   
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+/*Contenedor de secciones del apartado siguenos - damos centrado*/
+.contenedor-siguenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Selector para dar espacio por abajo del elemento*/
+.contenedor-siguenos > h5{
+    margin-bottom: 10px;
+}
+
+/*Color y tamaño para los iconos del apartado siguenos*/
+.contenedor-siguenos a{
+    color: black;
+    font-size: 20px;
+}
+
+/*Color al titulo del apartado siguenos*/
+#titulosiguenos{
+    color: rgba(96, 96, 96, 1);
+}
+
+/*Posición del contenedor general del apartado siguenos*/
+.siguenos{
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    right: 10px;
 }
 
 /*Responsive Celular*/
