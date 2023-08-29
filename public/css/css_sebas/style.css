@@ -1,0 +1,162 @@
+/*Fuente*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Estilo general para el centrado de items*/
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin: 20px 10%;
+    text-align: center;
+}
+/*Contenido*/
+#subDes_About, .mision_About, 
+.vision_About, .perfiles_About,
+#equipo, .contenidoMV{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Subtitulo "Nosotros" estilo*/
+.subTitulo_About{
+    text-transform: uppercase;
+    color: #606060;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: underline;
+    text-decoration-color: #A8A0A0;
+    text-underline-offset: 20px;
+}
+/*Texto general*/
+.text_About{
+    color: #959595;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Estilo de los títulos vision, mision y equipo*/
+h2{
+    margin: 0;
+}
+.sub_About{
+    color: #FEFEFE;
+    background: #5F91A8;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.tituloMision{
+    margin-right: auto;
+}
+.tituloVision{
+    margin-left: auto;
+}
+
+/*Margen imagenes*/
+#misionVision_About img{
+    margin-bottom: 30px;
+}
+
+/*Estilo de las cartas pefil*/
+.perfiles_About{
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.perfil{
+    border-radius: 18px;
+    padding: 15px 22px 40px 22px;
+    margin-top: 35px;
+    background-color: #D9D9D9;
+}
+.nombrePerfil{
+    color: #5F91A8;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.cargoPerfil{
+    color: #708357;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Adaptable*/
+/*celular*/
+@media (max-width: 500px) {
+
+}
+
+/*Tablet*/
+@media (min-width: 501px) and (max-width:1023px) {
+    #about{
+    margin: 20px 15%;
+    }
+}
+/*PC*/
+@media (min-width: 1024px){
+    /*Pegar el contenido a los lados*/
+    .mision_About *{
+        margin-right: auto;
+    }
+    .vision_About *{
+        margin-left: auto;
+    }
+    /*Separación entre las cartas de perfiles*/
+    .perfiles_About{
+        gap: 80px;
+    }
+
+    /*Para que el contenido este en fila y no en columna*/
+    .mision_About, .vision_About{
+        margin-top: 15px;
+        flex-direction: row;     
+    }
+
+    /*Contenido de Mision y vision para el cambio de color 
+    y posicionamiento*/
+    .contenidoMV{
+        padding: 40px 20px;
+        background-color: #5F91A8;
+        width: 430px;
+        position: relative;
+    }
+
+    /*Modificación de las imagenes para que este al costado
+    del div "contenidoMV" y estilo de sombreado y borde*/
+    .imagenMision{
+        position: absolute;
+        top: 5px;
+        right: -170px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagenVision{
+        position: absolute;
+        top: 20px;
+        left: -170px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagenMision, .imagenVision{
+       border-radius: 10px;
+       background-color: white;
+       
+    }
+
+    /*Cambio de color en el texto del div "contenidoMV"*/
+    #misionVision_About .text_About{
+        color: white;
+    }
+}
