@@ -13,7 +13,7 @@ body{
 /*Contenido*/
 #subDes_About, .mision_About, 
 .vision_About, .perfiles_About,
-#equipo{
+#equipo, .contenidoMV{
     display:flex ;
     flex-direction: column;
     justify-content: center;
@@ -66,13 +66,13 @@ h2{
     margin-bottom: 30px;
 }
 
+/*Estilo de las cartas pefil*/
 .perfiles_About{
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 20px;
 }
 
-/*Estilo de las cartas pefil*/
 .perfil{
     border-radius: 18px;
     padding: 15px 22px 40px 22px;
