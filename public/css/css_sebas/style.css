@@ -65,6 +65,13 @@ h2{
 #misionVision_About img{
     margin-bottom: 30px;
 }
+
+.perfiles_About{
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 /*Estilo de las cartas pefil*/
 .perfil{
     border-radius: 18px;
@@ -85,4 +92,28 @@ h2{
     line-height: normal;
 }
 
+/*Adaptable*/
+/*celular*/
+@media (max-width: 500px) {
 
+}
+
+/*Tablet*/
+@media (min-width: 501px) and (max-width:1023px) {
+    #about{
+    margin: 20px 15%;
+    }
+}
+/*PC*/
+@media (min-width: 1024px){
+    .mision_About *{
+        margin-right: auto;
+    }
+
+    .vision_About *{
+        margin-left: auto;
+    }
+    .perfiles_About{
+        gap: 80px;
+    }
+}
